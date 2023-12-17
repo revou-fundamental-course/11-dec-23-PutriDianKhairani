@@ -6,16 +6,22 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .nav-items{
     list-style-type: none;
+    border: 2px solid black;
+    padding: 5px;
 }
 
-.nav-items li{
+.nav-items tr th {
     display: inline;
     margin-right: 20px;
+    padding: 10px;
+    align-items: flex-end;
 }
 
 header{
@@ -46,4 +52,26 @@ header img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+main{
+    flex-direction: row; display: flex;
+}
+
+.formulir{
+    display: flex; flex: 1; flex-direction: column; align-content: center; justify-content: center;
+    margin-right: 300px;
+    margin-left: 20px;
+}
+
+main div ul {
+    display: grid;
+    border: 2px solid black;
+    list-style-type: none;
+    padding: 50px;
+}
+
+footer{
+    text-align: end;
 }
