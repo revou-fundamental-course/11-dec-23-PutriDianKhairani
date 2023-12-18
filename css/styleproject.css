@@ -60,16 +60,34 @@ main{
 }
 
 .formulir{
-    display: flex; flex: 1; flex-direction: column; align-content: center; justify-content: center;
-    margin-right: 300px;
     margin-left: 20px;
+    font-size: large;
 }
+
+main div #name{
+    display: inline;
+}
+
+main div #date{
+    display: inline;
+}
+
+main div #jeniskelamin {
+    display: inline;
+}
+
+main div #pesan {
+    display: inline;
+}
+
 
 main div ul {
     display: grid;
     border: 2px solid black;
     list-style-type: none;
     padding: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 footer{

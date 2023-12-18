@@ -10,7 +10,7 @@
 <body>
     <hr>
     <nav>
-        <img src="" alt="logo" class="logo">
+        <img src="Picture/logo.png" alt="logo" class="logo" width="100px">
         <table class="nav-items">
             <tr>
                 <th>Home</th>
@@ -25,7 +25,7 @@
     <header>
         <h1>Hi Putri, Welcome to Our Website</h1>
         <h4>Ini adalah website latihan pertama</h4>
-        <Img src="Picture/Rahmatan Lil Alamin fix.jpg">
+        <Img src="Picture/masjid.jpg">
         <hr>
     </header>
 
@@ -44,33 +44,52 @@
         </div>
         <div>
             <div class="circle" style="background-image: url(Picture/Lab.JPG);"></div>
-            <h4>laboratory</h4>
+            <h4>Lab. Computer</h4>
         </div>
     </div>
     <hr>
 
     <main>
-        <div>
+        <div class="formulir">
             <h3>Message Us</h3>
-            <form class="formulir">
-                <table id="name">Nama   :</table>
-                <input type="text" id="name">
-                <br/>
-                <table id="date">Tanggal Lahir</table>
-                <input type="date" id="date">
-                <br/>
-                <table>Jenis Kelamin</table>
-                <input type="radio" id="Laki-laki" name="jenis kelamin" value="Laki-laki">
-                <table id="Laki-laki">Laki-laki</table>
-                <input type="radio" id="perempuan" name="jenis kelamin" value="Perempuan">
-                <table id="perempuan">Perempuan</table>
-                <br/>
-                <table id="pesan">Pesan</table>
-                <input type="text" id="pesan">
-                <br/>
-                <input type="submit" value="Submit">
-
-            </form>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><form>
+                        <input type="text" id="name">
+                    </form></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><form>
+                        <input type="date" id="date">
+                    </form></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><form>
+                        <input type="radio" id="jeniskelamin" name="jenis kelamin" value="Laki-laki">
+                        <table id="jeniskelamin">Laki-laki</table>
+                        <input type="radio" id="jeniskelamin" name="jenis kelamin" value="Perempuan">
+                        <table id="jeniskelamin">Perempuan</table>
+                    </form></td>
+                </tr>
+                <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><form>
+                        <textarea rows="8" cols="30">Ketik di sini</textarea>
+                    </form></td>
+                </tr>
+                <tr >
+                    <td colspan="3"><form>
+                        <input type="submit" value="Submit">
+                    </form></td>
+                </tr>
+            </table>
         </div>
         <div>
             <ul class="isi">
