@@ -9,25 +9,60 @@
 </head>
 <body>
     <hr>
-    <nav>
+    <nav class="atas">
         <img src="Picture/logo.png" alt="logo" class="logo" width="100px">
-        <table class="nav-items">
-            <tr>
-                <th>Home</th>
-                <th>Our Profile</th>
-                <th>Achievement</th>
-                <th>Massage Us</th>
-            </tr>
-        </table>
+        <div class="nav-items">
+            <button><a href="project.html">Home</a></button>
+            <button><a href="profile.html">My Profile</a></button>
+            <button><a href="profile.html">Achievement</a></button>
+            <button><a href="#pesan">Massage Us</a></button>
+        </div>
     </nav>
     <hr>
 
-    <header>
-        <h1>Hi Putri, Welcome to Our Website</h1>
-        <h4>Ini adalah website latihan pertama</h4>
-        <Img src="Picture/masjid.jpg">
-        <hr>
-    </header>
+    <div>
+        <header style="background-image: url(Picture/masjid.jpg); width: 1366px; height: 578px;" class="gambar">
+            <h1>Hi <span id="name">Putri</span> Welcome to Website</h1>
+            <h4>Ini adalah website latihan pertama</h4>
+        </header>
+        <header style="background-image: url(Picture/kemerdekaan.jpg); width: 1366px; height: 578px;" class="gambar">
+            <h1>Hi <span id="name">Putri</span> Welcome to Website</h1>
+            <h4>Ini adalah website latihan pertama</h4>
+        </header>
+        <header style="background-image: url(Picture/paskibra.JPG); width: 1366px; height: 578px;" class="gambar">
+            <h1>Hi <span id="name">Putri</span> Welcome to Website</h1>
+            <h4>Ini adalah website latihan pertama</h4>
+        </header>
+        <button onclick="plusDivs(-1)">Previous</button>
+        <button onclick="plusDivs(1)">Next</button>
+    </div>
+
+    <script>
+        var slideIndex = 1
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += m)
+        }
+
+        function showDivs(n) {
+            var i;
+            var imgList = document.getElementsByClassName("gambar");
+            if (n>imgList.length) slideIndex=1;
+            else if (n<1) slideIndex=imgList.length;
+
+            for(i=0;1<imgList.length; i++) {
+                imgList(i).style.display = "none"
+            }
+
+            imgList[slideIndex-1].style.display = "block"
+
+            setInterval(() => {
+                plusDivs(1);
+            }, 1000);
+        }
+    </script>
+    <hr>
 
     <div>
         <h2>Our Facilitation</h2>
@@ -98,7 +133,7 @@
                 <li><b>Nama : </b>Harfi Novian</li>
                 <li><b>Tanggal Lahir : </b> 01/11/1995</li>
                 <li><b>Jenis Kelamin : </b>Laki-laki</li>
-                <li><b>Pesan : </b>Lagi Belajar buat Website</li>
+                <li id="pesan"><b>Pesan : </b>Lagi Belajar buat Website</li>
             </ul>
         </div>
     </main>
@@ -107,5 +142,7 @@
     <footer>
         Created by Putri
     </footer>
+
+    <script src="js/scriptproject.js"></script>
 </body>
 </html>

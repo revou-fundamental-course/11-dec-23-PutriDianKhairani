@@ -13,25 +13,48 @@ nav{
 
 .nav-items{
     list-style-type: none;
-    border: 2px solid black;
-    padding: 5px;
+    padding: 10px;
 }
 
-.nav-items tr th {
-    display: inline;
-    margin-right: 20px;
+.nav-items button {
+    display: inline-flex;
     padding: 10px;
-    align-items: flex-end;
+    text-align: end;
+    font-size: 14sp;
+    color: black;
+    border-bottom: 1px solid;
+    margin-bottom: 0%
+}
+
+@media only screen and (max-width: 600px) {
+    .atas {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo {
+        margin-bottom: 14px;
+    }
 }
 
 header{
-    text-align: center;
+    text-align: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    padding-left: 30px;
 }
 
 header img{
     width: 1366px;
     height: 578px;
     margin-bottom: 40px;
+    
 }
 
 .facilitations{
